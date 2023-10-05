@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP_Translate</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+
+  <style>
+    #download_elements a{
+        padding: 5px;
+        margin: 5px;
+        background: rgba(34, 2, 87, 0.904);
+        color: orange;
+        border-radius: 2px;
+        text-decoration: none;
+    }
+  </style>
+    <h2 style="margin: 4px 0">Laravel Lang files Translator</h2>
+    <small style="color: red; text-align: center; margin: 7px 0 20px 0">
+      The file must be a key-value pair and the array must be defined inside [
+      ]. Key and Value values must be strings
+    </small>
+    <form id="uploadForm">
+      <input type="file" id="phpFile" accept=".php" multiple />
+      <button type="submit">Upload</button>
+    </form>
+    <br />
+    <div>
+      <label>One File</label>
+      <progress id="one_file" value="0" max="100"></progress>
+    </div>
+    <br />
+    <div>
+      <label>All Files</label>
+      <progress id="all_file" value="0" max="100">All File</progress>
+    </div>
+
+    <div id="download_elements" style="text-align: center; margin-top: 5px;">
+      <small style="color: green; text-align: center; margin: 7px 0 20px 0; display: block;">
+        Download will be starting automatically and you can use bellow links to
+        download files
+      </small>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
