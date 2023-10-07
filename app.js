@@ -7,6 +7,8 @@ document
     document.getElementById("upload_submit").disabled = false
   });
 
+// test
+
 const allFilesTranslator = async () => {
   document
     .getElementById("all_file")
